@@ -98,6 +98,7 @@ namespace Controllers
             _context.Add(student);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = student.ID }, student);
+            
         }
 
         // PUT: Student{id}
